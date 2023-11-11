@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style.qss</file>
+        <file>images/close.png</file>
+        <file>fonts/fontawesome-webfont.ttf</file>
+        <file>images/delete.png</file>
+        <file>images/find.png</file>
+        <file>images/info.png</file>
+        <file>images/question.png</file>
+        <file>images/radio_normal.png</file>
+        <file>images/radio_selected.png</file>
+        <file>images/select.png</file>
+        <file>images/update.png</file>
+        <file>images/calendar.png</file>
+        <file>images/calendar_hover.png</file>
+        <file>images/calendar_selected.png</file>
+        <file>images/left.png</file>
+        <file>images/left_hover.png</file>
+        <file>images/left_pressed.png</file>
+        <file>images/right.png</file>
+        <file>images/right_hover.png</file>
+        <file>images/right_pressed.png</file>
+        <file>images/room/deluxe.jpg</file>
+        <file>images/room/dual.jpg</file>
+        <file>images/room/president.jpg</file>
+        <file>images/room/single.jpg</file>
+    </qresource>
+</RCC>

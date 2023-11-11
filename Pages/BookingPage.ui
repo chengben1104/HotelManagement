@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BookingPage</class>
+ <widget class="QWidget" name="BookingPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>813</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="RoomSummaryTable" name="TB_ROOM_INFO">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>550</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="GRID_BOOKING_PERSON">
+       <property name="title">
+        <string>预定人信息</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>入住天数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>身份证号：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QRadioButton" name="RB_MALE">
+          <property name="text">
+           <string>男</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QRadioButton" name="RD_FEMALE">
+          <property name="text">
+           <string>女</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1" colspan="2">
+         <widget class="QLineEdit" name="LE_DAY">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="placeholderText">
+           <string>自动计算入住天数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>电话:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4" colspan="2">
+         <widget class="QLineEdit" name="LE_FEE">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="placeholderText">
+           <string>自动计算预计费用</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>预付费用：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="2">
+         <widget class="MobilePhoneLineEdit" name="LE_PHONE_NUMBER">
+          <property name="placeholderText">
+           <string>请输入11位手机号码</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QLineEdit" name="LE_NAME">
+          <property name="placeholderText">
+           <string>请输入预定人姓名</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>性别：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="3">
+         <widget class="IDNumberLineEdit" name="LE_ID">
+          <property name="placeholderText">
+           <string>请输入有效的身份证号码</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>姓名:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>入住时间:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>离店时间:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="DateTimeEdit" name="CB_CHECKIN_DATE"/>
+        </item>
+        <item row="0" column="4" colspan="2">
+         <widget class="DateTimeEdit" name="CB_CHECKOUT_DATE"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="PB_CONFIRM">
+       <property name="text">
+        <string>预定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RoomSummaryTable</class>
+   <extends>QTableWidget</extends>
+   <header>Widgets/RoomSummaryTable.h</header>
+  </customwidget>
+  <customwidget>
+   <class>DateTimeEdit</class>
+   <extends>QComboBox</extends>
+   <header>Widgets/DateTimeEdit/date_time_edit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MobilePhoneLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>Widgets/MobilePhoneLineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>IDNumberLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>Widgets/IDNumberLineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>CB_CHECKIN_DATE</tabstop>
+  <tabstop>CB_CHECKOUT_DATE</tabstop>
+  <tabstop>LE_NAME</tabstop>
+  <tabstop>LE_PHONE_NUMBER</tabstop>
+  <tabstop>LE_ID</tabstop>
+  <tabstop>RB_MALE</tabstop>
+  <tabstop>RD_FEMALE</tabstop>
+  <tabstop>PB_CONFIRM</tabstop>
+  <tabstop>LE_DAY</tabstop>
+  <tabstop>LE_FEE</tabstop>
+  <tabstop>TB_ROOM_INFO</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
